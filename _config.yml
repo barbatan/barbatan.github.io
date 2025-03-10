@@ -6,7 +6,8 @@ description: "개인 위키 - 독서, 영상 감상, 기술 정리, 프로젝트
 baseurl: "" # GitHub Pages의 저장소 이름이 들어갈 수 있음
 url: "https://sonytany.github.io" # 본인의 GitHub Pages URL
 
-theme: "just-the-docs" # Jekyll 테마 적용
+#theme: "just-the-docs" # Jekyll 테마 적용
+remote_theme: "pmarsceill/just-the-docs"
 
 # 네비게이션 설정 (사이드바)
 navigation:
@@ -36,5 +37,6 @@ search_enabled: true
 
 # GitHub Pages에서 호환되도록 설정
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
