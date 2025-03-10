@@ -1,3 +1,36 @@
-remote_theme: pmarsceill/just-the-docs
-plugins:
-  - jekyll-remote-theme
+# _config.yml
+
+# 사이트 기본 설정
+name: "My Wiki"
+description: "개인 위키 - 독서, 영상 감상, 기술 정리, 프로젝트 관리"
+baseurl: "" # GitHub Pages의 저장소 이름이 들어갈 수 있음
+url: "https://sonytany.github.io" # 본인의 GitHub Pages URL
+
+theme: "just-the-docs" # Jekyll 테마 적용
+remote_theme: "pmarsceill/just-the-docs"
+
+# 네비게이션 설정 (사이드바)
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "독서 & 영상 감상"
+    children:
+      - title: "책 리뷰"
+        url: "/reviews/books"
+      - title: "영화 & 드라마"
+        url: "/reviews/movies"
+  - title: "기술 위키"
+    children:
+      - title: "백엔드"
+        url: "/wiki/backend"
+      - title: "개발 도구"
+        url: "/wiki/tools"
+  - title: "프로젝트 & 학습 노트"
+    children:
+      - title: "개인 프로젝트"
+        url: "/projects/my_blog"
+      - title: "학습 노트"
+        url: "/projects/study_notes"
+
+# 검색 기능 활성화
+search_enabled: true
